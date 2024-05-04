@@ -62,7 +62,11 @@ void addNode()
     {
         previous->next = newNode; // step 7: Make the next field of the previous node point to the new node
     }
-
+    else
+    {
+        // If previous is still NULL, it means newNode is now the first node
+        START = newNode;
+    }
 }
 
 int main()
