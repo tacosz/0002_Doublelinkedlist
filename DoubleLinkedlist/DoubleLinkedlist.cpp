@@ -5,8 +5,8 @@ struct Node
 {
     int noMhs;
     string name;
-    Node* next;
-    Node* prev;
+    Node *next;
+    Node *prev;
 };
 
 int main()
