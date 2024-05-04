@@ -29,6 +29,14 @@ void addNode()
             return;
         }
     }
+    // If the list is empty, make the new node the START
+    newNode->next = START; // step 3: make the new node point to the first node
+    if (START != NULL)
+    {
+        START->prev = newNode; //step 4: make the first node point to the first node
+    }
+    newNode->prev = NULL;   //step 5: make the new node point to NULL
+    START = newNode;        //step 6: make the new node the first node
 }
 
 int main()
